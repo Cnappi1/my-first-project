@@ -1,0 +1,248 @@
+/* Top of page prior to page specific content */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.centered-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Main Content of Page. Where the specific content of pages begins*/
+
+header h2 {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 3rem;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-side {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.left-side a {
+  color: inherit; 
+}
+
+.main-image {
+  text-align: center;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.main-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.right-side,
+.shop-store {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.shop-store {
+  grid-column: 3; 
+}
+
+/* Styles for the streaming tables */
+.streaming-tables {
+  margin: 20px;
+  padding: 20px;
+}
+
+.streaming-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  background-color: #ffffff; 
+}
+
+.streaming-table th, .streaming-table td {
+  border: 1px solid #ddd; 
+  padding: 10px; 
+  text-align: left;
+}
+
+.streaming-table th {
+  background-color: #2c3e50; 
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+.streaming-table tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+.streaming-table tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+.streaming-table tr:hover {
+  background-color: #d1ecf1; 
+  cursor: pointer; 
+}
+
+.streaming-table td {
+  color: #333; 
+}
+
+.streaming-table th {
+  font-size: 1.1rem; 
+  text-transform: uppercase; 
+}
+
+/* Footer information */
+
+footer {
+  text-align: center; 
+  background-color: #f4f4f4;
+  padding: 10px 0;
+}
+
+footer img {
+  display: block; 
+  margin: 0 auto; 
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  max-width: 200px; 
+  border-radius: 5px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  font-size: 2.5rem; 
+  color: #2c3e50; 
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1.2rem; 
+  color: #fff;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 100%; 
+  padding: 8px; 
+  font-size: 1rem; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 80px; 
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2c3e50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(44, 62, 80, 0.5);
+}
+
+form button {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a252f;
+}
