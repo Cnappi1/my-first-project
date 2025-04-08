@@ -6,7 +6,8 @@ This includes tips on elevating your space, recipes, games, movie reviews, and m
 Key Aspects of the Site:
 Home Page: Welcoming users. It offers a featured item, game, or idea for the week. It also offers you tips on how to elevate your home.
 About Us: Get to know the people at Happy At Home. What our story is and meet an employee of the month.
-Recipes: Try some of our recipes. There is a range from beginner to gourmet.
+Recipes: Try some of our recipes. There is a range from beginner to gourmet. 
+Added 04/04: An image gallery of recipes we are trying to provide to users soon. Added a video clip to the gourmet.html subpage to showcase a freshly made sourdough loaf and its singing. 
 Entertainment: Check out recommendations for movies, TV shows, books, crafts, and more!
 Store: Arriving soon! A store to meet all your cozy needs, from homewares to comfy sweatshirts.
 Contact Us: We love hearing from you! Reach out with your questions, concerns, or reviews on our suggestions!
