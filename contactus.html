@@ -17,6 +17,10 @@
         <li><a href="entertainment.html">Entertainment</a></li>
         <li><a href="store.html">Store</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
+         <li>
+          <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+          <script>cartPaypal.Cart({ id: "pp-view-cart" })</script>
+        </li>
       </ul>
     </nav>
   </header>
@@ -27,7 +31,7 @@
     <section class="left-side">
       <h2>We LOVE hearing from you!</h2>
       <p>We want to hear from you! <br> Please reach out with any questions or concerns. <br>
-      We would also love to hear the things you are loving about our site. Tried a recipe or book reccomendation? Let us know about it! We look forward to hearing from you!</p>
+      We would also love to hear the things you are loving about our site. Tried a recipe or book recommendation? Let us know about it! We look forward to hearing from you!</p>
       <form method="post" action="https://webdevbasics.net/scripts/demo.php">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
