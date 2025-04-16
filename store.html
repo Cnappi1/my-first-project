@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy At Home</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XJ5EM9XJZPWC6"></script>
 </head>
 <body>
   <header>
@@ -17,6 +18,10 @@
         <li><a href="entertainment.html">Entertainment</a></li>
         <li><a href="store.html">Store</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
+          <li>
+          <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+          <script>cartPaypal.Cart({ id: "pp-view-cart" })</script>
+        </li>
       </ul>
     </nav>
   </header>
@@ -31,9 +36,9 @@
             <dt><a href="all.html">Shop All</a></dt>
             <dd>Check out all our great items for sale!</dd>
             <dt><a href="clothing.html">Clothing</a></dt>
-            <dd>Find something new to show off around the house while reading one of our book reccomendations!</dd>
+            <dd>Find something new to show off around the house while reading one of our book recommendations!</dd>
             <dt><a href="lifestyle.html">Home and Lifestyle</a></dt>
-            <dd>Looking for that perfect mug or blanket to cozy up with while watching our latest movie reccomendation?</dd>
+            <dd>Looking for that perfect mug or blanket to cozy up with while watching our latest movie recommendation?</dd>
         </dl>
     </section>
     <section class="main-image">
@@ -42,9 +47,12 @@
     </section>
     <section class="right-side">
       <h2>On Sale This Week!</h2>
-      <p>
-      A rotating feature Happy At Home Item on sale
-      </p>
+      <div class="product">
+        <paypal-add-to-cart-button data-id="KBG2VEVS6L2Z4"></paypal-add-to-cart-button>
+      <script>
+      cartPaypal.AddToCart({ id: "KBG2VEVS6L2Z4" })
+      </script>
+      </div>
     </section>
   </main>
 
