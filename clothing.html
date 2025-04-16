@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy At Home</title>
+  <title>Happy At Home: Clothing</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XJ5EM9XJZPMWC6"></script>
 </head>
 <body>
   <header>
@@ -21,44 +22,62 @@
     </nav>
   </header>
 
-  
   <h2 class="centered-heading">Shop from the Comfort of Home</h2>
 
   <main>
     <section class="left-side">
       <h2>Clothing Items For Sale!</h2>
-      Clothing items for sale in the store.
+      <div class="product">
+        <h3>Happy At Home T-shirt</h3>
+        <p>Price: $20.00</p>
+        <paypal-add-to-cart-button data-id="KBG2VEVS6L2Z4"></paypal-add-to-cart-button>
+        <script>
+          cartPayPal.AddToCart({ id: "KBG2VEVS6L2Z4" });
+        </script>
+      </div>
     </section>
 
     <section class="main-image">
       <img src="images/logo.png" alt="Happy At Home Logo.">
-      <h3>Item Images Coming Soon!</h3>
+      <h3>New Items Coming Soon!</h3>
     </section>
 
     <section class="right-side">
       <h2>What Shoppers Are Saying!</h2>
       <p>
-      Recent feedback provided by buyers 
+      <section class="main-image">
+        <img src="images/5star.jpg" alt="5 gold stars">
+      </section>
+      "I am living in the hoodie released around Christmas time! It is so comfortable that it is my favorite clothing item to wear around the house." - Ann C. <br>
 
+      <br>
+
+      "The new Happy At Home T-Shirt is high quality and so comfortable! Will be wearing this all summer!" - Erin M. <br>
+
+      <br>
+
+      "Their hoodies are so comfortable. So roomy and can easily hide my face inside it when watching the scarier movies!" - Kat G. <br>
       </p>
     </section>
-
   </main>
 
-<footer>
-  <img src="images/logo.png" alt="Happy At Home Logo">
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="entertainment.html">Entertainment</a></li>
-      <li><a href="store.html">Store</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  <a href="mailto:cnappi1@my.westga.edu">Email Us!</a>
-</footer>
-
+  <footer>
+    <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+    <script>
+      cartPayPal.Cart({ id: "pp-view-cart" });
+    </script>
+    <img src="images/logo.png" alt="Happy At Home Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="mailto:cnappi1@my.westga.edu">Email Us!</a>
+  </footer>
 </body>
 </html>
