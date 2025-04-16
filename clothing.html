@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy At Home: Clothing</title>
+  <meta name="description" content=" Looking for something new and cozy to wear? Try one of our comfortable t-shirts, hoodies, or sweatpants! Better grab them quickly because they sell out fast. We restock as often and add new items too!">
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XJ5EM9XJZPMWC6"></script>
+
+  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XJ5EM9XJZPWC6"></script>
 </head>
 <body>
   <header>
@@ -20,9 +22,7 @@
         <li><a href="contactus.html">Contact Us</a></li>
         <li>
           <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
-          <script>
-            cartPayPal.Cart({ id: "pp-view-cart" });
-          </script>
+          <script>cartPaypal.Cart({ id: "pp-view-cart" })</script>
         </li>
       </ul>
     </nav>
@@ -34,18 +34,15 @@
     <section class="left-side">
       <h2>Clothing Items For Sale!</h2>
       <div class="product">
-        <h3>Happy At Home T-shirt</h3>
-        <p>Price: $15.50</p> 
-        <p>This comfy T-shirt is perfect for lounging around the house and enjoying another wonderful day...</p>
-        <paypal-add-to-cart-button data-id="3431"></paypal-add-to-cart-button>
-        <script>
-          cartPayPal.AddToCart({ id: "3431" }); 
-        </script>
+        <paypal-add-to-cart-button data-id="KBG2VEVS6L2Z4"></paypal-add-to-cart-button>
+      <script>
+      cartPaypal.AddToCart({ id: "KBG2VEVS6L2Z4" })
+      </script>
       </div>
     </section>
 
     <section class="main-image">
-      <img src="images/logo.png" alt="Happy At Home Logo.">
+      <img src="images/logo.png" alt="Happy At Home Logo">
       <h3>New Items Coming Soon!</h3>
     </section>
 
