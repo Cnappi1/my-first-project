@@ -10,7 +10,7 @@ Recipes: Try some of our recipes. There is a range from beginner to gourmet.
 Added 04/04: An image gallery of recipes we are trying to provide to users soon. Added a video clip to the gourmet.html subpage to showcase a freshly made sourdough loaf and its singing. 
 Entertainment: Check out recommendations for movies, TV shows, books, crafts, and more!
 Store: A store to meet all your cozy needs, from homewares to comfy sweatshirts. Now partnered with PayPal for easy and trusted use for our shoppers.
-Contact Us: We love hearing from you! Reach out with your questions, concerns, or reviews on our suggestions!
+Contact Us: We love hearing from you! Reach out with your questions, concerns, or reviews on our suggestions! 04/29/25 Update: Added Alert to contact us page to remind users to leave reviews to win prizes.
 
 Code Used:
 HTML and CSS
