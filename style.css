@@ -1,3 +1,4 @@
+
 /* Base Styles */
 body {
   font-family: Arial, sans-serif;
@@ -244,100 +245,127 @@ form button:hover {
   background-color: #1a252f;
 }
 
-/* Recipe Gallery Styles */
-.recipe-gallery {
-  margin: 40px auto;
-  text-align: center;
-}
-
+/* Slideshow Styles */
 .recipe-gallery h2 {
   font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 20px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  justify-items: center; 
-}
-
-.gallery figure {
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
-.gallery img {
+.gallery-slideshow {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.slideshow-container {
+  max-width: 600px;
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#slideshow-image {
+  width: 100%;
+  max-width: 600px;
   height: auto;
+  max-height: 400px;
+  object-fit: contain;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+#slideshow-caption {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #222;
+  font-weight: bold;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  line-height: 1.4;
+  width: 100%;
+  text-align: center;
 }
 
-.gallery figcaption {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #333;
-  font-weight: bold; 
-  text-align: center; 
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding: 5px; 
-  border-radius: 5px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+.slideshow-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.main-image video {
-  max-width: 100%; 
-  border-radius: 5px; 
+.nav-button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #1a252f;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 4rem; 
+    font-size: 4rem;
   }
 
   .centered-heading {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   main {
     display: grid;
-    grid-template-columns: 1fr; 
-    padding: 10px; 
+    grid-template-columns: 1fr;
+    padding: 10px;
   }
 
   .left-side, .right-side {
-    padding: 15px; 
+    padding: 15px;
   }
 
-  .recipe-gallery h2 {
-    font-size: 1.5rem; 
+  #slideshow-caption {
+    font-size: 1.5rem;
+    padding: 10px;
   }
 
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
-    padding: 10px; 
+  .nav-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  #slideshow-caption {
+    font-size: 1.2rem;
   }
 
-  .gallery img {
-    border-radius: 5px; 
+  .nav-button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  .slideshow-controls {
+    flex-direction: column;
+    gap: 10px;
   }
 
   footer {
-    padding: 5px 0; 
+    padding: 5px 0;
   }
 
   footer nav ul {
-    flex-direction: column; 
+    flex-direction: column;
   }
 }
