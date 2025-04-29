@@ -4,9 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy At Home: Recipes</title>
-     <meta name="description" content=" Cooking at home can be fun, but it can also be overwhelming. Especially when trying to decide what to make. Short on time, skills, or want to feel like a true pro? We have recipes for all of the above and much more! Cooking at home can be a relaxing experience, and we want to help everyone find that joy!">
+  <meta name="description" content=" Cooking at home can be fun, but it can also be overwhelming. Especially when trying to decide what to make. Short on time, skills, or want to feel like a true pro? We have recipes for all of the above and much more! Cooking at home can be a relaxing experience, and we want to help everyone find that joy!">
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="XJ5EM9XJZPWC6"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const images = [
+        { src: "images/artisanbread.jpeg", caption: "Artisan Bread" },
+        { src: "images/bbqchickenpizza.jpeg", caption: "BBQ Chicken Pizza" },
+        { src: "images/cheesecrackers.jpeg", caption: "Cheese Crackers" },
+        { src: "images/cinnamonmuffins.jpeg", caption: "Cinnamon Muffins" },
+        { src: "images/lemoncookie.jpeg", caption: "Lemon Cookie" },
+        { src: "images/pepperonipizza.jpeg", caption: "Pepperoni Pizza" },
+        { src: "images/pretzel.jpeg", caption: "Pretzel" },
+        { src: "images/raspberrymuffin.jpeg", caption: "Raspberry Muffin" },
+        { src: "images/sdraw.jpeg", caption: "Sourdough Loaf: Before" },
+        { src: "images/sdfin.jpeg", caption: "Sourdough Loaf: After" },
+      ];
+
+      let currentIndex = 0; 
+      const totalImages = images.length;
+
+      function updateSlideshow(index) {
+        const image = images[index];
+        $("#slideshow-image").attr("src", image.src).attr("alt", image.caption);
+        $("#slideshow-caption").html(image.caption);
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % totalImages; 
+        updateSlideshow(currentIndex);
+      }
+
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Loop back to the end
+        updateSlideshow(currentIndex);
+      }
+
+      $("#next").click(function () {
+        showNext();
+      });
+
+      $("#prev").click(function () {
+        showPrev();
+      });
+
+      setInterval(showNext, 5000);
+
+      updateSlideshow(currentIndex);
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -19,7 +66,7 @@
         <li><a href="entertainment.html">Entertainment</a></li>
         <li><a href="store.html">Store</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
-         <li>
+        <li>
           <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
           <script>cartPaypal.Cart({ id: "pp-view-cart" })</script>
         </li>
@@ -27,94 +74,61 @@
     </nav>
   </header>
 
-  
   <h2 class="centered-heading">You've Got Food At Home!</h2>
 
   <main>
     <section class="left-side">
       <h2>Something For Everyone</h2>
-        <dl>
-            <dt><a href="quick.html">Quick Fixes and Snacks</a></dt>
-            <dd>In a hurry or looking for a quick treat? These are the recipes for you.</dd>
-            <dt><a href="beginner.html">Beginner Friendly</a></dt>
-            <dd>Wanting to cook a meal at home, but you are still learning your way around a stove? Start here! </dd>
-            <dt><a href="gourmet.html">Gourmet At Home</a></dt>
-            <dd>So you just finished a marathon of chopped and you think you're ready to open your own restaurant? Give these a whirl! </dd>
-        </dl>
+      <dl>
+        <dt><a href="quick.html">Quick Fixes and Snacks</a></dt>
+        <dd>In a hurry or looking for a quick treat? These are the recipes for you.</dd>
+        <dt><a href="beginner.html">Beginner Friendly</a></dt>
+        <dd>Wanting to cook a meal at home, but you are still learning your way around a stove? Start here!</dd>
+        <dt><a href="gourmet.html">Gourmet At Home</a></dt>
+        <dd>So you just finished a marathon of chopped and you think you're ready to open your own restaurant? Give these a whirl!</dd>
+      </dl>
     </section>
 
-<section class="recipe-gallery">
-  <h2>Look what we have been testing! <br>
-  These Receipes will be out for you to try in the near future!</h2>
-  <div class="gallery">
-    <figure>
-      <img src="images/artisanbread.jpeg" alt="Artisan Bread">
-      <figcaption>Artisan Bread</figcaption>
-    </figure>
-    <figure>
-      <img src="images/bbqchickenpizza.jpeg" alt="BBQ Chicken Pizza">
-      <figcaption>BBQ Chicken Pizza</figcaption>
-    </figure>
-    <figure>
-      <img src="images/cheesecrackers.jpeg" alt="Cheese Crackers">
-      <figcaption>Cheese Crackers</figcaption>
-    </figure>
-    <figure>
-      <img src="images/cinnamonmuffins.jpeg" alt="Cinnamon Muffins">
-      <figcaption>Cinnamon Muffins</figcaption>
-    </figure>
-    <figure>
-      <img src="images/lemoncookie.jpeg" alt="Lemon Cookie">
-      <figcaption>Lemon Cookie</figcaption>
-    </figure>
-    <figure>
-      <img src="images/pepperonipizza.jpeg" alt="Pepperoni Pizza">
-      <figcaption>Pepperoni Pizza</figcaption>
-    </figure>
-    <figure>
-      <img src="images/pretzel.jpeg" alt="Pretzel">
-      <figcaption>Pretzel</figcaption>
-    </figure>
-    <figure>
-      <img src="images/raspberrymuffin.jpeg" alt="Raspberry Muffin">
-      <figcaption>Raspberry Muffin</figcaption>
-    </figure>
-    <figure>
-      <img src="images/sdraw.jpeg" alt="Sourdough Loaf Uncooked">
-      <figcaption>Sourdough Loaf: Before</figcaption>
-    </figure>
-    <figure>
-      <img src="images/sdfin.jpeg" alt="Sourdough Loaf Baked">
-      <figcaption>Sourdough Loaf: After</figcaption>
-    </figure>
-  </div>
-</section>
+    <section class="recipe-gallery">
+      <h2>Look what we have been testing! <br> These Recipes will be out for you to try in the near future!</h2>
+      
+      <div class="gallery-slideshow">
+        <div class="slideshow-container">
+          <img id="slideshow-image" src="images/artisanbread.jpeg" alt="Artisan Bread">
+          <figcaption id="slideshow-caption">Artisan Bread</figcaption>
+          <div class="slideshow-controls">
+            <button id="prev" class="nav-button">Previous</button>
+            <button id="next" class="nav-button">Next</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <section class="right-side">
-      <h2>Quick Cooking Tips! </h2>
+      <h2>Quick Cooking Tips!</h2>
       <p>
-       <ul>
-        <li>The first tip comes from Rachel Ray, way back in the day when Carly used to watch her cooking shows with her dad. Rachel told us to keep a "trash bowl" on the counter while you cook. This is honestly a game changer. You throw all your scraps, wraps, and peels into this bowl as you cook. Then when you are done you dump the content of the bowl in the trash. This might seem like a wasteful dirting of a dish, but it really is nice to not be going back and for to the trash can constantly. Your trash bowl is right there waiting for you on the counter as you go. </li>
-        <li>Prep all your items before you go. This goes beyond just chopping vegetables and seasoning your meat. Go ahead and measure out all your ingredients when necessary. Go ahead and get out all the utensils, dishes, and pans you need to cook your meal. Prepping ahead of time greats a better flow while cooking which will make the experience much more enjoyable.</li>
-      </ul>
+        <ul>
+          <li>The first tip comes from Rachel Ray, way back in the day when Carly used to watch her cooking shows with her dad. Rachel told us to keep a "trash bowl" on the counter while you cook. This is honestly a game changer. You throw all your scraps, wraps, and peels into this bowl as you cook. Then when you are done you dump the content of the bowl in the trash. This might seem like a wasteful dirting of a dish, but it really is nice to not be going back and forth to the trash can constantly. Your trash bowl is right there waiting for you on the counter as you go.</li>
+          <li>Prep all your items before you go. This goes beyond just chopping vegetables and seasoning your meat. Go ahead and measure out all your ingredients when necessary. Go ahead and get out all the utensils, dishes, and pans you need to cook your meal. Prepping ahead of time creates a better flow while cooking which will make the experience much more enjoyable.</li>
+        </ul>
       </p>
     </section>
   </main>
 
-<footer>
-  <img src="images/logo.png" alt="Happy At Home Logo">
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="entertainment.html">Entertainment</a></li>
-      <li><a href="store.html">Store</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  <a href="mailto:cnappi1@my.westga.edu">Email Us!</a>
-</footer>
-
+  <footer>
+    <img src="images/logo.png" alt="Happy At Home Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="mailto:cnappi1@my.westga.edu">Email Us!</a>
+  </footer>
 </body>
 </html>
